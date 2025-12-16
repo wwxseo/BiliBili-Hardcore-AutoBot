@@ -36,7 +36,24 @@
 点击右上角的绿色按钮 **Code** -> **Download ZIP**，下载后解压到一个文件夹里。
 
 ### 第二步：安装依赖
-打开电脑终端（Windows 是 CMD 或 PowerShell，Mac 是 终端），进入项目文件夹，运行以下命令：
+
+我们需要告诉电脑安装这个脚本需要的“零件” (库)。你可以选择以下任意一种方式打开终端：
+
+*   **方法 A：如果你用 Visual Studio Code (推荐)**
+    1.  用 VS Code 打开本项目的文件夹。
+    2.  在顶部菜单栏点击 **“终端 (Terminal)”** -> **“新建终端 (New Terminal)”**。
+    3.  在下方弹出的窗口中直接输入命令即可。
+
+*   **方法 B：如果你用 Windows 系统文件夹**
+    1.  打开存放本项目的文件夹。
+    2.  在文件夹顶部的**地址栏**里输入 `cmd`，然后按回车。会弹出一个黑色的命令框。
+
+*   **方法 C：如果你用 macOS**
+    1.  打开“终端” (Terminal) App。
+    2.  输入 `cd ` (注意 cd 后面有个空格)，然后把本项目文件夹**拖进**终端窗口，按回车。
+
+**打开终端后，输入以下命令并回车：**
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -61,10 +78,22 @@ python main.py
 按回车启动，然后你就可以放手了！
 ## ❓ 常见问题与故障排除 (FAQ)
 ### 1. Windows 用户提示 "adb 不是内部或外部命令" 或报错？
-原因：本项目默认内置了 macOS 版的 ADB 工具。
-解决方法：
-请下载 Windows 版 ADB 工具包。
-解压后，将其中的 adb.exe、AdbWinApi.dll、AdbWinUsbApi.dll 三个文件复制到本项目文件夹中，覆盖原有的文件。
+
+> **原因**：本项目默认内置的是 macOS 版的 ADB 工具，Windows 系统无法直接运行。
+
+**解决方法**：你需要下载 Windows 版的 ADB 替换进去。
+
+**📥 官方 ADB 工具包下载地址：**
+*   **Windows 版本**：[点击下载](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+*   **macOS 版本**：[点击下载](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) (本项目已内置，如损坏可重新下载)
+*   **Linux 版本**：[点击下载](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+
+**替换步骤 (Windows 用户必做)：**
+1.  下载上面的 Windows 版压缩包并解压。
+2.  进入解压后的 `platform-tools` 文件夹。
+3.  找到 `adb.exe`、`AdbWinApi.dll`、`AdbWinUsbApi.dll` 这三个文件。
+4.  **复制**这三个文件。
+5.  回到本项目的文件夹，**粘贴并覆盖**原有的 `adb` 文件。
 ### 2. Mac/Linux 用户提示 "Permission denied"？
 原因：下载的文件可能丢失了可执行权限。
 解决方法：在终端运行以下命令赋予权限：
@@ -102,3 +131,7 @@ UI_RATIOS = {
 请勿用于商业用途或恶意破坏 Bilibili 社区规则。
 使用本工具产生的任何后果（如账号风险）由使用者自行承担。
 ### Happy Coding & Enjoy Bilibili! ⚡️
+## 🤝 贡献与支持
+
+如果你觉得这个脚本帮到了你，请点击右上角的 ⭐️ **Star** 支持一下作者！
+欢迎提交 Issue 或 Pull Request。
