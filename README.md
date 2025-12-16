@@ -39,6 +39,7 @@
 打开电脑终端（Windows 是 CMD 或 PowerShell，Mac 是 终端），进入项目文件夹，运行以下命令：
 ```bash
 pip install -r requirements.txt
+```
 
 ### 第三步：手机设置 (关键)
 开启开发者模式：去手机设置 -> 关于手机 -> 连续点击“版本号”7次。
