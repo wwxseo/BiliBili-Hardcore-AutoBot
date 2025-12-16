@@ -135,3 +135,7 @@ UI_RATIOS = {
 
 如果你觉得这个脚本帮到了你，请点击右上角的 ⭐️ **Star** 支持一下作者！
 欢迎提交 Issue 或 Pull Request。
+## 效果图
+
+![Screenshot_2025-12-16-03-16-43-70_149003a2d400f6adb210d7e357a3a646](https://github.com/user-attachments/assets/675236e6-c4fe-481d-bb9e-7d6536436370)
+
