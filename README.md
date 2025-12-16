@@ -143,3 +143,4 @@ UI_RATIOS = {
 https://github.com/user-attachments/assets/ea6096b2-6e25-4572-a984-7cc0d04491de
 
 
+> 📖 **更多高级配置、故障排除和技术原理，请查阅 [项目 Wiki 文档](../../wiki)**
